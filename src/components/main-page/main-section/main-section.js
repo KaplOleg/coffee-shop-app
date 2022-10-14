@@ -12,7 +12,7 @@ const MainSection = () => {
                     <h1 className="title">Everything You Love About Coffee</h1>
                     <BeansLogo/>
                     <div className="subtitle">
-                        We makes every day full of energy and taste<br/>
+                        We makes every day full of energy and taste
                         Want to try our beans?
                     </div>
                     <button className="main-btn">More</button>
