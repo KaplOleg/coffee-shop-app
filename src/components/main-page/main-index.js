@@ -1,9 +1,14 @@
 import Header from '../general/header/header'
 import BeansLogo from '../general/beans-logo/beans-logo'
-//import Footer from '../general/footer/footer'
+import Footer from '../general/footer/footer'
+
+import img_1 from '../../image/cards/card-img-first.png'
+import img_2 from '../../image/cards/card-img-second.png'
+import img_3 from '../../image/cards/card-img-third.png'
 
 
 import './main-index.sass'
+import Card from './card/card'
 
 const MainIndex = () => {
     return(
@@ -12,7 +17,7 @@ const MainIndex = () => {
                 <div className="container">
                     <Header/>
                     <div className="wrapper_content">
-                        <h1 className="title">Everything You Love About Coffee</h1>
+                        <h1 className="header_text">Everything You Love About Coffee</h1>
                         <BeansLogo/>
                         <div className="subtitle">
                             We makes every day full of energy and taste
@@ -42,6 +47,25 @@ const MainIndex = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="our_best_section">
+                <h2 className="title">About Us</h2>
+                <div className="wrapper_cards">
+                  <Card 
+                    linkImg={img_1} 
+                    name="Solimo Coffee Beans 2 kg" 
+                    price="10.73$"/>
+                  <Card 
+                    linkImg={img_2} 
+                    name="Presto Coffee Beans 1 kg" 
+                    price="15.99$"/>
+                  <Card 
+                    linkImg={img_3} 
+                    name="AROMISTICO Coffee 1 kg" 
+                    price="6.99$"/>
+                </div>
+            </section>
+            <Footer/>
         </>
     )
 }

@@ -1,30 +1,43 @@
 .container
     width: 1140px
     margin: 0 auto
+.title
+    font-weight: 400
+    font-size: 24px
+    color: #000000
+    padding-top: 80px
+    text-align: center
 .main
     min-height: 640px
     background: url('../../image/backgrounds/main-bg.jpg') no-repeat center/cover
+    .header
+        justify-content: flex-start
+        margin: 0
+        &_logo .img
+            background: url('../../icons/coffee-beans-logo-light.png') no-repeat center/cover
+    .menu .menu_link
+        color: #FFFFFF
     .wrapper_content
         margin-top: 111px
         text-align: center
         color: #FFFFFF
-        .title
-            font-weight: 700
-            font-size: 40px
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-        .subtitle
-            width: 530px
-            margin: 35px auto 0 auto
-            font-weight: 700
-            font-size: 24px
-            line-height: 50px
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-        .wrapper
-            margin-top: 20px
-            .img
-                background: url('../../icons/bean-light.png') no-repeat center/cover
-                &::before, &::after
-                    border: 1px solid #FFFFFF
+    .header_text
+        font-weight: 700
+        font-size: 40px
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    .subtitle
+        width: 530px
+        margin: 35px auto 0 auto
+        font-weight: 700
+        font-size: 24px
+        line-height: 50px
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    .wrapper
+        margin-top: 20px
+        .img
+            background: url('../../icons/bean-light.png') no-repeat center/cover
+            &::before, &::after
+                border: 1px solid #FFFFFF
 .main-btn
     margin-top: 18px
     width: 120px
@@ -41,11 +54,6 @@
 .about_us_section
     min-height: 520px
     text-align: center
-    .title
-        font-weight: 400
-        font-size: 24px
-        color: #000000
-        margin-top: 80px
     .wrapper
         margin-top: 20px
     .content
@@ -55,3 +63,13 @@
         font-size: 14px
         line-height: 20px
         color: #000000
+
+.our_best_section
+    min-height: 495px
+    background: url('../../image/backgrounds/paper-bg.jpg') no-repeat center/cover
+.wrapper_cards
+    width: 802px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 39px auto 0 auto
