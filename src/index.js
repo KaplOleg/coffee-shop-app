@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Footer from './general/footer/footer';
+import MainIndex from './components/main-page/main-index';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
-      <Footer/>
+      <MainIndex/>
     </>
 );
 

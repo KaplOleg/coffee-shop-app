@@ -1,4 +1,3 @@
-
 import './beans-logo.sass'
 
 const BeansLogo = () => {

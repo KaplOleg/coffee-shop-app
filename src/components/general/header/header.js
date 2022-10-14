@@ -1,4 +1,3 @@
-
 import './header.sass'
 
 const Header = () => {
